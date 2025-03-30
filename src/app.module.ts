@@ -21,8 +21,6 @@ export class AppModule implements OnModuleInit {
 		HH: this.hh,
 	};
 	onModuleInit() {
-		console.log("запуск", process.env.HH_BASE_URL);
-		console.log("what", [process.env.WHICH_COMPANY_SCRAP_WITH_START]);
 		this.companyMap[process.env.WHICH_COMPANY_SCRAP_WITH_START].startScraping();
 	}
 }

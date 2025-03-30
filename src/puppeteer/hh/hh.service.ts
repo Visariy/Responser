@@ -70,9 +70,7 @@ export class HhService {
 					}
 
 					await applyOnVacancy(page);
-
-					console.log("test", await checkCoverLatter(page));
-
+					
 					if (await checkCoverLatter(page)) {
 						await page.type(
 							process.env.COVER_LATTER_TEXT_AREA_CLASS,
