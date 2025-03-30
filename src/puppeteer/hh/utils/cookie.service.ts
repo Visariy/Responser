@@ -24,7 +24,7 @@ export const formatCookie = (cookies: Cookie[]) => {
 			httpOnly: cookie.httpOnly,
 			secure: cookie.secure,
 			session: cookie.session,
-			sameSite: "None" as "None",
+			sameSite: "None" as const,
 		};
 	});
 };
